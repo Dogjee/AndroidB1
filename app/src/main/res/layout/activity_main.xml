@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_marginTop="20sp">
+            <Button
+                android:text="@string/test"
+                android:id="@+id/btn_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <ImageButton
+                android:id="@+id/ib"
+                android:src="@drawable/star_be_ti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <Button
+                android:text="@string/exit"
+                android:id="@+id/btn_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+    </TableLayout>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/hint"
+        android:id="@+id/edt_1"
+        />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_1"
+            android:text="@string/option_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/radio_2"
+            android:text="@string/option_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <CheckBox
+            android:text="@string/autosave"
+            android:id="@+id/cb_autosave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/cb_star"
+            android:background="#F0AD36"
+            android:textAlignment="center"
+            style="?android:attr/starStyle"
+            android:text="@string/starStyle"
+            android:textColor="#00f"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <ToggleButton
+            android:id="@+id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <TextView
+        android:textAlignment="center"
+        android:text="@string/show"
+        android:textSize="20sp"
+        android:id="@+id/tv_hienthi"
+        android:textColor="#ff1e00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:src="@drawable/ca_lia_thia_1"
+            android:visibility="gone"
+            android:id="@+id/iv_1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_2"
+            android:src="@drawable/ca_lia_thia_2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+    </LinearLayout>
+</LinearLayout>

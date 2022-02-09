@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">B1_1_HuynhDaiThang_B1908416</string>
+    <string name="test">test</string>
+    <string name="exit">exit</string>
+    <string name="autosave">Autosave</string>
+    <string name="starStyle">Starstyle</string>
+    <string name="hint">Enter message</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="show">Hien thi text se nhap vao EditText</string>
+
+</resources>
